@@ -1,141 +1,137 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    font-family: sans-serif;
-    color: #1b281b;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border: solid 2px violet;
+  font-family: sans-serif;
+  color: #1b281b;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 .wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    border: solid 2px orange;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: solid 2px blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    gap: 10px;
-    font-weight: bold;
-    border: solid 2px red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  gap: 10px;
+  font-weight: bold;
 }
 
- nav a {
-    text-decoration: none;
-    color: black;
+nav a {
+  text-decoration: none;
+  color: black;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    margin:0;
+  width: 50px;
+  height: 50px;
+  margin: 0;
 }
 
 main {
-    margin: 0px 5px;
-    padding: 10px;
-
+  margin: 0px 5px;
+  padding: 10px;
 }
 
-section{
-    margin-top: 60px;
+section {
+  margin-top: 60px;
 }
 
 .boulder {
-    max-width: 100%;
-    display: block;
-    margin-top: 60px;
+  max-width: 100%;
+  display: block;
 }
 
 h1 {
-    /* color: #4676A9; */
-    text-align: center;
-    font-size: 2.5rem;
+  /* color: #4676A9; */
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
 }
 
-
 .teal {
-    color: #4676A9;
+  color: #4676a9;
 }
 
 .orange {
-    color: #cb721c;
+  color: #cb721c;
 }
 
 h2 {
-    
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .climber {
-    color: #ffff;
-    background-image: url("images/simple-steps.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    border: 10px solid #4676A9;
+  color: #ffff;
+  background-image: url("images/simple-steps.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border: 10px solid #4676a9;
 }
 
 .teal-bg {
-    background: #087a98;
-    color: #ffff;
-    border: 10px solid #4676A9;
-    padding: 10px;
-    text-align: center;
+  background: #087a98;
+  color: #ffff;
+  border: 10px solid #4676a9;
+  padding: 10px;
+  text-align: center;
 }
 
 .teal-bg p {
-    font-size: .8rem;
-    line-height: 1.5;
-    margin: 10px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 10px;
 }
 
 h3 {
-    font-size: 1rem;
-    margin: 10px 0;
+  font-size: 1rem;
+  margin: 10px 0;
 }
 footer {
-    background-color: #22466c;
-    color: #ffff;
-    text-align: center;
-    padding: 10px;
-    border: solid 2px #6e84cf;
-    margin-top: 20px;
+  background-color: #22466c;
+  color: #ffff;
+  text-align: center;
+  padding: 10px;
+  border: solid 2px #6e84cf;
+  margin-top: 20px;
 }
 
 p {
-    font-size: .9rem;
-    line-height: 2;
-    /* padding: 20px; */
+  font-size: 0.9rem;
+  line-height: 2;
 }
 
 ul {
-    margin-top: 0;
-    border: 10px solid green;
-    list-style-position: inside;
+  margin-top: 0;
+  list-style-position: inside;
 }
 
 li {
-    font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .two-column-layout {
-    display: grid;
+  display: grid;
+  gap: 60px;
+  margin-block-end: 60px;
+}
+
+@media (width > 720px) {
+  .two-column-layout {
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+  }
 }
