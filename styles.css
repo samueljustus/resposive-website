@@ -1,20 +1,48 @@
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     font-family: sans-serif;
     color: #1b281b;
     font-size: 1.25rem;
     line-height: 1.5;
+    border: solid 2px violet;
 }
 
 .wrapper {
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
+    border: solid 2px orange;
 }
 header {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px blue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+    font-weight: bold;
+    border: solid 2px red;
+}
+
+ nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin:0;
 }
 
 main {
@@ -30,21 +58,56 @@ section{
 .boulder {
     max-width: 100%;
     display: block;
+    margin-top: 60px;
 }
 
 h1 {
-    color: #4676A9;
+    /* color: #4676A9; */
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+}
+
+
+.teal {
+    color: #4676A9;
+}
+
+.orange {
+    color: #cb721c;
 }
 
 h2 {
-    color: #cb721c;
+    
     font-size: 1.2rem;
+}
+
+.climber {
+    color: #ffff;
+    background-image: url("images/simple-steps.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border: 10px solid #4676A9;
+}
+
+.teal-bg {
+    background: #087a98;
+    color: #ffff;
+    border: 10px solid #4676A9;
+    padding: 10px;
+    text-align: center;
+}
+
+.teal-bg p {
+    font-size: .8rem;
+    line-height: 1.5;
+    margin: 10px;
 }
 
 h3 {
     font-size: 1rem;
+    margin: 10px 0;
 }
 footer {
     background-color: #22466c;
@@ -52,6 +115,7 @@ footer {
     text-align: center;
     padding: 10px;
     border: solid 2px #6e84cf;
+    margin-top: 20px;
 }
 
 p {
@@ -62,8 +126,16 @@ p {
 
 ul {
     margin-top: 0;
+    border: 10px solid green;
+    list-style-position: inside;
 }
 
 li {
-    font-size: .8rem;  
+    font-size: .8rem;
+}
+
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
 }

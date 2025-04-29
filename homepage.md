@@ -19,6 +19,4 @@ Improves problem solving skills
 Builds mental resilience
 And much more!
 
-Interested? Then find out how to get started with bouldering!
-
 ©2025 Boulder inc. All rights reserved.
